@@ -1,0 +1,7 @@
+<% @movie.each do |movie| %>
+<dl>
+<dt><b> <%= link_to movie.title, movie_path(movie.id) %> </b></dt>
+<dd> <%= movie.description %> </dd>
+<dd> <%= movie.year_released %> </dd>
+</dl>
+<% end %>
